@@ -1,23 +1,97 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <block wx:if="{{canIUseOpenData}}">
-      <view class="userinfo-avatar" bindtap="bindViewTap">
-        <open-data type="userAvatarUrl"></open-data>
-      </view>
-      <open-data type="userNickName"></open-data>
-    </block>
-    <block wx:elif="{{!hasUserInfo}}">
-      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
-    </block>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<!--index.wxml-->
+<view class="bgd">
+
+<view class="tree">
+    <view class="head">
+        <text class="big">Hi~</text>
+        欢迎来到低碳星系
+    </view>
+    <view class="num">
+    <view class="n">
+        <view class="nu">
+            <text class="small">我们的低碳"树"量</text>
+            <text class="big">2,000,000</text>
+            <view class="page__bd page__bd_spacing">
+                <button class="weui-btn mini-btn" type="primary" size="mini">我的树木</button>
+            </view>
+        </view>
+    </view>    
+    </view>
+
+<!--<mp-icon type="field" icon="add" color="black" size="{{25}}"></mp-icon>-->
+<!--<mp-dialog title="test" show="{{true}}" bindbuttontap="tapDialogButton" buttons="{{[{text: '取消'}, {text: '确认'}]}}">
+    <view>test content</view>
+</mp-dialog>-->
 </view>
+
+<view class="planet">
+    <view class="clock">
+        <view class="cl">
+            <text class="big">打卡星</text>
+            <view class="page__bd page__bd_spacing">
+                <button class="weui-btn mini-btn" type="primary" size="mini">我要打卡</button>
+            </view>
+        </view>
+        
+    </view>
+    <view class="activity">
+        <view class="ac">
+            <text class="big">活动星</text>
+            <view class="page__bd page__bd_spacing">
+                <button class="weui-btn mini-btn" type="primary" size="mini">参加活动</button>
+            </view>
+        </view>
+    </view>
+
+</view>
+
+<view class="charts">
+    <view class="chb">
+        <image class="im1" src="static/cht.png" mode=""/>
+    </view>
+    <view class="me">
+        <view class="item">
+        <view class="before">
+            <view class="order">1000</view>
+            <view class="im2"><image src="static/t2.png" style="width: 105rpx;height: 105rpx;border-radius: 35rpx;" mode=""/></view>
+            <view class="name">我</view>
+        </view>
+        <view class="after">
+            <view class="treen">0</view>
+            <view class="like">
+                <mp-icon type="outline" icon="like" color="rgb(148, 145, 145)" size="{{23}}"></mp-icon>
+             </view>
+        </view>
+    </view> 
+    </view>
+
+<view class="ch">
+    <block wx:for="{{charts}}" wx:key="index">
+    <view class="item" wx:if="{{index<5}}">
+        <view class="before">
+            <view class="order">{{index+1}}</view>
+            <view class="im2"><image src="static/t2.png" style="width: 105rpx;height: 105rpx;border-radius: 35rpx;" mode=""/></view>
+            <view class="name">{{item.username}}</view>
+        </view>
+        <view class="after">
+            <view class="treen">{{item.treecount}}</view>
+            <view class="like">
+                <mp-icon type="outline" icon="like" color="rgba(26, 99, 44, 0.637)" size="{{23}}"></mp-icon>
+             </view>
+        </view>
+    </view>
+  </block>
+</view>
+
+   
+<view class="weui-panel__ft" bindtap="toCharts">
+            <view class="weui-cell weui-cell_access weui-cell_link">
+                <view class="weui-cell__bd">查看更多</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+</view>
+    
+</view>
+</view> 
+

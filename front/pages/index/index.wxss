@@ -1,19 +1,161 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #aaa;
+/**index.wxss**/
+.bgd{
+    background-color: rgba(197, 240, 167, 0.158);
+    width: 750rpx;
+    height: 2500rpx;
+}
+.big{
+    font-size: 45rpx;
+    font-weight: bolder;
+}
+.small{
+    font-size: 35rpx;
+}
+.head{
+    margin-left: 20rpx;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+.num{
+    
+    margin-top: 20rpx ;
+    margin-left: 170rpx;
+    width: 400rpx;
+    height: 400rpx;
+    background-color: rgb(114, 221, 114);
+    border-radius: 200rpx;
+    border: white solid 5rpx;
+}
+.n{
+    margin-top: 110rpx ;
+    margin-left: 30rpx;
+    width: 350rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nu{
+    margin: 30rpx;
+    width: 350rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.im1{
+    width: 570rpx;
+    height: 260rpx;
+
+}
+.planet{
+    width: 715rpx;
+    height: 470rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.clock{
+    margin-left: 40rpx;
+    background-color: rgba(64, 224, 104, 0.562);
+    width: 290rpx;
+    height: 290rpx;
+    border-radius: 200rpx;
+}
+.cl{
+    padding-left: 17rpx;
+    padding-top: 80rpx;
+    width: 250rpx;
+    height: 80rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.activity{
+    margin-top: 100rpx;
+    background-color: rgba(64, 224, 171, 0.582);
+    width: 350rpx;
+    height: 350rpx;
+    border-radius: 200rpx;
+}
+.ac{
+    padding-left: 50rpx;
+    padding-top: 110rpx;
+    width: 250rpx;
+    height: 150rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.charts{
+    height: 800rpx;
+    
+}
+.chb{
+    margin-left: 120rpx;
+}
+.chp{
+    border-radius: 10rpx;
+    width: 720rpx;
+    margin-left: 10rpx;
 }
 
-.userinfo-avatar {
-  overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.weui-media-box__thumb{
+    border-radius: 50rpx;
 }
+.bu{
+    margin-top: 1300rpx;
+}
+.item{
+    height: 150rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top:rgba(197, 240, 167, 0.158) solid 2rpx;
+    background-color: white;
+    
+}
+.before{
+    width: 480rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.im2{
+    width: 130rpx;
+    height: 105rpx;
+    margin-left: 0rpx;
+}
+.like{
+    height: 70rpx;
+    margin-right: 30rpx;
+}
+.after{
+    width: 235rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.order{
+    width: 120rpx;
+    display: flex;
+    justify-content: center;
+    color: rgb(148, 145, 145);
 
-.usermotto {
-  margin-top: 200px;
+    font-size: 45rpx;
+}
+.name{
+    width: 250rpx;
+    margin-left: 2rpx;
+    font-size: 34rpx;
+}
+.treen{
+    color: rgb(148, 145, 145);
+    font-size: 45rpx;
+}
+.me{
+    width: 750rpx;
+    margin-bottom: 25rpx;
 }

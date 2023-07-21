@@ -1,0 +1,58 @@
+/* index.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contribution-count {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.check-in-btn {
+  background-color: #00ff22;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.ranking-list {
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.list-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: green;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.check-in-count {
+  font-size: 14px;
+  color: #777;
+}

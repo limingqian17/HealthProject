@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "mp-dialog": "weui-miniprogram/dialog/dialog",
+        "mp-icon": "weui-miniprogram/icon/icon",
+        "mp-cells": "weui-miniprogram/cells/cells",
+        "mp-cell": "weui-miniprogram/cell/cell",
+        "mp-actionSheet": "weui-miniprogram/components/actionsheet/actionsheet"
+    }
+}

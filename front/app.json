@@ -1,14 +1,44 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+        "pages/index/index",
+        "pages/charts/charts",
+        "pages/zone/zone",
+        "pages/home/home",
+        "pages/food_menu/food_menu",
+        "pages/list/list",
+        "pages/login/login"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "pages/static/bee.jpg",
+                "selectedIconPath": "pages/static/bee.jpg"
+            },
+            {
+                "pagePath": "pages/zone/zone",
+                "text": "专区",
+                "iconPath": "pages/static/mbe.jpg",
+                "selectedIconPath": "pages/static/mbe.jpg"
+            },
+            {
+                "pagePath": "pages/home/home",
+                "text": "我的",
+                "iconPath": "pages/static/mbe.jpg",
+                "selectedIconPath": "pages/static/mbe.jpg"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "useExtendedLib": {
+        "weui": true
+    }
 }

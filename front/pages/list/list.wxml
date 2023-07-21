@@ -1,0 +1,16 @@
+<!-- index.wxml -->
+<view class="container">
+  <view class="contribution-count">已贡献光盘数：{{contributionCount}}</view>
+  <button class="check-in-btn" bindtap="onCheckIn">我要打卡</button>
+
+  <view class="ranking-list">
+    <view class="list-header">打卡排行榜</view>
+    <block wx:for="{{rankingData}}" wx:key="index">
+      <view class="list-item">
+        <image class="user-avatar" src="{{item.avatarUrl}}"></image>
+        <text class="user-name">{{item.username}}</text>
+        <text class="check-in-count">光盘打卡数量：{{item.checkInCount}}</text>
+      </view>
+    </block>
+  </view>
+</view>

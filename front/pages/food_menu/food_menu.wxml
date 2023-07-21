@@ -1,0 +1,43 @@
+<view class="container">
+  <view class="options">
+    <navigator url="/pages/calorie-monitor/calorie-monitor">监测卡路里</navigator>
+    <navigator url="/pages/recipe-categories/recipe-categories">菜谱分类</navigator>
+  </view>
+  <view class="recipes">
+    <view class="recipes-row">
+      <view class="recipe-item">
+        <!-- 第一个菜谱内容 -->
+        <image src="recipe1.jpg"></image>
+        <text>菜谱名称1</text>
+      </view>
+      <view class="recipe-item">
+        <!-- 第二个菜谱内容 -->
+        <image src="recipe2.jpg"></image>
+        <text>菜谱名称2</text>
+      </view>
+    </view>
+    <view class="recipes-row">
+      <view class="recipe-item">
+        <!-- 第三个菜谱内容 -->
+        <image src="recipe3.jpg"></image>
+        <text>菜谱名称3</text>
+      </view>
+      <view class="recipe-item">
+        <!-- 第四个菜谱内容 -->
+        <image src="recipe4.jpg"></image>
+        <text>菜谱名称4</text>
+      </view>
+    </view>
+  </view>
+  <view class="change-btn">换一换</view>
+  <view class="user-profile">
+    <image src="user-avatar.jpg"></image>
+    <!-- 用户头像 -->
+  </view>
+  <view class="share-image">
+    <image src="shared-recipe.jpg"></image>
+    <!-- 分享的菜品图片 -->
+  </view>
+</view>
+
+

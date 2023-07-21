@@ -1,0 +1,60 @@
+/* pages/charts/charts.wxss */
+.bgd{
+
+}
+.title{
+    width: 750rpx;
+    height: 100rpx;
+    font-size: 50rpx;
+    color: rgba(26, 99, 44, 0.562);
+    display: flex;
+    justify-content: center;
+}
+.item{
+    height: 170rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top:rgba(197, 240, 167, 0.158) solid 2rpx;
+    background-color: white;
+    
+}
+.before{
+    width: 480rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.im2{
+    width: 130rpx;
+    height: 105rpx;
+    
+}
+.like{
+    height: 70rpx;
+    margin-right: 30rpx;
+}
+.after{
+    width: 210rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.order{
+    width: 110rpx;
+    display: flex;
+    justify-content: center;
+    color: rgba(26, 99, 44, 0.637);
+
+    font-size: 50rpx;
+}
+.name{
+    margin-left: 10rpx;
+    font-size: 40rpx;
+    width: 270rpx;
+}
+.treen{
+    color: rgba(26, 99, 44, 0.637);
+    font-size: 50rpx;
+}

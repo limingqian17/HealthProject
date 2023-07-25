@@ -1,0 +1,20 @@
+/* pages/zone/zone.wxss */
+.bgd{
+    background-color: rgb(187, 219, 187);
+    height: 1250rpx;
+}
+.food{
+    background-color: rgb(225, 241, 225);
+    height: 400rpx;
+    margin-bottom: 20rpx;
+}
+.rubbish{
+    background-color: rgb(225, 241, 225);
+    height: 400rpx;
+    margin-bottom: 20rpx;
+}
+.plate{
+    background-color: rgb(225, 241, 225);
+    height: 400rpx;
+    margin-bottom: 20rpx;
+}

@@ -1,0 +1,16 @@
+<!--pages/zone/zone.wxml-->
+<view class="bgd">
+
+<view class="food">
+    <text>个人饮食</text>
+</view>
+
+<view class="rubbish">
+    <text>垃圾分类</text>
+</view>
+
+<view class="plate">
+    <text>光盘打卡</text>
+</view>
+
+</view>

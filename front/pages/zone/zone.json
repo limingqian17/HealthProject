@@ -1,3 +1,17 @@
 {
-    "usingComponents": {}
+    "usingComponents": {
+        "mp-dialog": "weui-miniprogram/dialog/dialog",
+        "mp-icon": "weui-miniprogram/icon/icon",
+        "mp-cells": "weui-miniprogram/cells/cells",
+        "mp-cell": "weui-miniprogram/cell/cell",
+        "mp-form-page": "weui-miniprogram/form-page/form-page",
+        "mp-toptips": "weui-miniprogram/toptips/toptips",
+        "mp-checkbox": "weui-miniprogram/checkbox/checkbox",
+        "mp-checkbox-group": "weui-miniprogram/checkbox-group/checkbox-group",
+        "mp-form": "weui-miniprogram/form/form"
+    },
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00dd77",
+    "navigationBarTitleText": "专区",
+    "navigationBarTextStyle": "white"  
 }

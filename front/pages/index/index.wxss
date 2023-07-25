@@ -3,7 +3,8 @@
 .bgd{
     background-color: rgba(197, 240, 167, 0.158);
     width: 750rpx;
-    height: 2500rpx;
+    height: 2200rpx;
+    padding-top: 50rpx;
 }
 .big{
     font-size: 45rpx;

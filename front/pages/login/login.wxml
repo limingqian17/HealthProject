@@ -1,2 +1,26 @@
 <!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+<view class="weui-panel__ft" style="height: 1000rpx;">
+                <view hover-class="click" class="weui-cell weui-cell_access weui-cell_link" style="color: black;" bindtap="showActionSheet">
+                    <view class="weui-cell__bd">头像</view>
+                    <image  src="{{userInfo.avatarUrl}}" mode="" style="width: 110rpx;height: 110rpx;border-radius: 30rpx;"/>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </view>
+                <view hover-class="click" class="weui-cell weui-cell_access weui-cell_link" style="color: black;">
+                    <view class="weui-cell__bd">昵称</view>
+                    <open-data type="userNickName" lang="zh_CN"></open-data>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </view>
+                <view hover-class="click" class="weui-cell weui-cell_access weui-cell_link" style="color: black;">
+                    <view class="weui-cell__bd">生日</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </view>
+                <view hover-class="click" class="weui-cell weui-cell_access weui-cell_link" style="color: black;">
+                    <view class="weui-cell__bd">地区</view>
+                    安徽芜湖
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </view>
+</view>
+
+<button style="background-color: #93f8ce;color: rgba(0, 0, 0, 0.596);width: 300rpx;">保存</button>
+
+

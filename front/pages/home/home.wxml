@@ -1,11 +1,52 @@
 <!--pages/home/home.wxml-->
-<navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active"  bindtap="toLogin">
+<!--<navigator url="toLogin" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active"  bindtap="toLogin">
     <image class="im1" src="static/t1.png"/>
         <view class="weui-cell__bd weui-cell_primary">
-            <view>登录</view>
+            <button open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+            <text>{{name}}</text>
         </view>
     <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-</navigator>
+</navigator>-->
+<view class="bgd">
+<view class="bg">
+</view>   
+<view class="log">
+    
+<view wx:if="{{!isLogin}}">
+<mp-cell value="" footer="">
+                <image slot="icon" src="static/t1.png" style="margin-right: 16px;vertical-align: middle;width:120rpx; height: 120rpx;border-radius: 30rpx;border: #78c9a7 solid 4rpx;"></image>
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="page__bd">
+        <view class="weui-btn-area" style="margin-top: 30rpx;">
+            <button class="btn" bindtap="openTypeF">登录</button>
+        </view>
+        <mp-halfScreenDialog show="{{typeF}}">
+          <view slot="title">低碳星系</view>
+          <view slot="desc" style="font-weight: bold;margin-bottom: 20rpx;">申请获取微信号、昵称、头像等信息</view>
+          <view slot="desc" style="font-size: 32rpx;">登陆后，即可参与低碳活动，创建低碳宇宙，累积低碳树木，交流低碳经验</view>
+          <view slot="footer">
+            <button slot="footer" type="default" class="weui-btn"  open-type="getUserInfo" bindgetuserinfo="getUserInfo">确认授权</button>
+            <checkbox-group slot="tips" bindchange="bindAgreeChange" >
+                <label class="weui-agree">
+                    阅读并同意<navigator>《相关条款》</navigator>
+                    <checkbox class="weui-agree__checkbox-check" />
+                    <text class="weui-agree__checkbox"></text>
+                    <view class="weui-agree__text"></view>
+                </label>
+            </checkbox-group>
+          </view>
+        </mp-halfScreenDialog>  
+    </view>
+</view>
+</mp-cell>
+</view>
+<view wx:else>
+    <mp-cell hover link url="../login/login" value="{{username}}" footer="">
+                <image slot="icon" src="{{userInfo.avatarUrl}}" style="margin-right: 16px;vertical-align: middle;width:120rpx; height: 120rpx;border-radius: 30rpx;border-radius: 30rpx;border: #78c9a7 solid 4rpx;"></image>
+    </mp-cell>
+</view>
+
+</view>
 
 <view class="num">
         <view class="n1">
@@ -20,6 +61,8 @@
         </view>
 </view>
 
+
+</view>
 <view class="weui-panel__ft">
                 <view class="weui-cell weui-cell_access weui-cell_link">
                     <mp-icon type="outline" icon="setting" color="rgba(128, 128, 128, 0.733)" size="{{23}}"></mp-icon>
@@ -41,27 +84,5 @@
                     <view class="weui-cell__bd">更多</view>
                     <view class="weui-cell__ft weui-cell__ft_in-access"></view>
                 </view>
-    </view>
-
-    <view class="page" data-weui-theme="{{theme}}">
-    <view class="page__hd">
-        <view class="page__title">ActionSheet</view>
-        <view class="page__desc">弹出式菜单</view>
-    </view>
-    <view class="page__bd">
-        <view class="weui-btn-area">
-            <!-- <button class="weui-btn" type="default" bindtap="open">原生 ActionSheet</button> -->
-            <button class="weui-btn" type="default" bindtap="openDialog">模拟 ActionSheet</button>
-        </view>
-    </view>
-<mp-actionSheet bindactiontap="btnClick" show="{{showDialog}}" actions="{{groups}}" title="这是一个标题，可以为一行或者两行。">
-        <view slot="{{'actionSlot' + '1'}}" class="custom-action">
-            <view class="custom-action_desc">前往图中包含的小程序：</view>
-            <view class="custom-action_content">
-                <mp-icon icon="qr-code" size="{{20}}"></mp-icon>
-                <text class="custom-action_name">小程序名称</text>
-                <mp-icon icon="arrow" size="{{12}}"></mp-icon>
-            </view>
-        </view>
-    </mp-actionSheet>
 </view>
+

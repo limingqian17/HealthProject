@@ -6,14 +6,10 @@
         "pages/home/home",
         "pages/food_menu/food_menu",
         "pages/list/list",
-        "pages/login/login"
+        "pages/login/login",
+        "pages/hdimg/hgimg"
     ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "Weixin",
-        "navigationBarTextStyle": "black"
-    },
+    "window": {},
     "tabBar": {
         "list": [
             {

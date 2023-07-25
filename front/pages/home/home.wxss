@@ -1,4 +1,20 @@
 /* pages/home/home.wxss */
+.bgd{
+    height: 350rpx;
+    position: relative;
+}
+.bg{
+    background-color: #93f8ce;
+    width: 100%;
+    height: 300rpx;
+    position: absolute;
+    z-index: 100;
+}
+.log{
+    position: absolute;
+    z-index: 150;
+    width: 750rpx;
+}
 .im1{
     width: 65px;
     height: 65px;
@@ -6,23 +22,35 @@
     vertical-align:middle;
     border-radius: 70rpx;
 }
+.btn{
+    background-color: white;
+    border: #78c9a7 solid 5rpx;
+    color: #78c9a7;
+}
 .head{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .num{
-    background-color: rgba(68, 205, 50, 0.664);
+    background-color: #78c9a7;
     margin-left: 50rpx;
+    margin-top: 230rpx;
     width: 650rpx;
     height: 120rpx;
     border-radius: 35rpx;
 
+    position: absolute;
+    z-index: 100;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
     color: white;
+}
+.mp-halfScreenDialog{
+    position: absolute;
+    z-index: 160;
 }
 .n0{
     margin-top: 30rpx;

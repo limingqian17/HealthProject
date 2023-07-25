@@ -1,0 +1,9 @@
+<!--pages/hdimg/hgimg.wxml-->
+<!--<swiper class="swiper" indicator-dots="false">
+  <swiper-item>
+    <image class="avatar" src="{{userInfo.avatarUrl}}" mode="aspectFit"></image>
+  </swiper-item>
+</swiper>-->
+<view class="avatar">
+    <image  src="static/t1.png" mode=""/>         
+</view>

@@ -1,8 +1,10 @@
 <!--pages/zone/zone.wxml-->
+
 <view class="bgd">
 
 <view class="food">
-    <text>个人饮食</text>
+    <button class="weui-btn mini-btn" type="primary" size="mini"  bindtap="toFood">个人饮食</button>
+            
 </view>
 
 <view class="rubbish">
@@ -10,7 +12,21 @@
 </view>
 
 <view class="plate">
-    <text>光盘打卡</text>
+    <button class="weui-btn mini-btn" type="primary" size="mini"  bindtap="toList">光盘打卡</button>
 </view>
 
+</view>
+<checkbox-group slot="tips" bindchange="bindAgreeChange" >
+            <label class="weui-agree">
+           阅读并同意<navigator>《相关条款》</navigator>
+            <checkbox class="weui-agree__checkbox-check" />
+                <text class="weui-agree__checkbox"></text>
+                <view class="weui-agree__text"></view>
+                 </label>
+</checkbox-group>
+
+<view class="div-relative"> 
+  <view class="div-a">我背景为红色</view> 
+  <view class="div-b">我背景为黄色</view> 
+  <view class="div-c">我背景为蓝色</view> 
 </view>

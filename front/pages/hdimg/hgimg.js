@@ -1,34 +1,32 @@
-// pages/zone/zone.js
+// pages/hdimg/hgimg.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        nbFrontColor: '#000000',
-        nbBackgroundColor: '#ffffff',
+        userInfo: {}
     },
-
+    getUserInfo: function(e) {
+        wx.getUserInfo({
+        success(res) {
+          console.log("获取用户信息成功", res)
+          that.setData({
+              userInfo: res.userInfo
+          })
+        },
+        fail(res) {
+          console.log("获取用户信息失败", res)
+        }
+    })
+    },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-        this.setData({
-            nbTitle: '个人信息',
-            nbFrontColor: '#ffffff',
-            nbBackgroundColor: '#00dd77',
-      })
+
     },
-    toFood:function(opotions){
-        wx.navigateTo({
-          url: '../food_menu/food_menu',
-        })
-    },
-    toList:function(opotions){
-        wx.navigateTo({
-          url: '../list/list',
-        })
-    },
+
     /**
      * 生命周期函数--监听页面初次渲染完成
      */

@@ -1,23 +1,13 @@
-// pages/zone/zone.js
 Page({
-
-    /**
-     * 页面的初始数据
-     */
-    data: {
-        nbFrontColor: '#000000',
-        nbBackgroundColor: '#ffffff',
-    },
-
+  data: {
+    background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
+  },
+  
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-        this.setData({
-            nbTitle: '个人信息',
-            nbFrontColor: '#ffffff',
-            nbBackgroundColor: '#00dd77',
-      })
+        
     },
     toFood:function(opotions){
         wx.navigateTo({
@@ -27,6 +17,11 @@ Page({
     toList:function(opotions){
         wx.navigateTo({
           url: '../list/list',
+        })
+    },
+    toRubbish:function(opotions){
+        wx.navigateTo({
+          url: '../rubbish_sorting/rubbish_sorting',
         })
     },
     /**
@@ -77,4 +72,5 @@ Page({
     onShareAppMessage() {
 
     }
+  
 })

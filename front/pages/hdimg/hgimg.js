@@ -5,9 +5,15 @@ Page({
      * 页面的初始数据
      */
     data: {
-        userInfo: {}
+        userInfo: {},
+        id:'aaa000'
     },
-    getUserInfo: function(e) {
+    
+    /**
+     * 生命周期函数--监听页面加载
+     */
+    onLoad(options) {
+        let that=this
         wx.getUserInfo({
         success(res) {
           console.log("获取用户信息成功", res)
@@ -19,12 +25,6 @@ Page({
           console.log("获取用户信息失败", res)
         }
     })
-    },
-    /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad(options) {
-
     },
 
     /**

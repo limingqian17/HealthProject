@@ -44,7 +44,11 @@ Page({
           this.getUserInfo();
       },
 
-
+    toSet:function (opotions) {
+        wx.navigateTo({
+            url: '../login/login',
+          })
+    },
     toLogin:function(opotions){
         wx.navigateTo({
           url: '../login/login',

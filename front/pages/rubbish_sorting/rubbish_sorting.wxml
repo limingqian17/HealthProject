@@ -1,0 +1,12 @@
+<!--pages/rubbish_sorting/rubbish_sorting.wxml-->
+<view class="container">
+  <view class="options">
+    <view class="option" bindtap="switchToTestArea">测试专区</view>
+    <view class="option" bindtap="switchToManualArea">手工专区</view>
+  </view>
+
+  <view class="post-container">
+    <!-- 在这里引入帖子内容组件 -->
+    <post-content posts="{{currentPosts}}" />
+  </view>
+</view>

@@ -22,18 +22,18 @@
         </view>
         <mp-halfScreenDialog show="{{typeF}}">
           <view slot="title">低碳星系</view>
-          <view slot="desc" style="font-weight: bold;margin-bottom: 20rpx;">申请获取微信号、昵称、头像等信息</view>
+          <view slot="desc" style="font-weight: bold;margin-bottom: 20rpx;">申请通过微信授权，不会读取任何个人信息</view>
           <view slot="desc" style="font-size: 32rpx;">登陆后，即可参与低碳活动，创建低碳宇宙，累积低碳树木，交流低碳经验</view>
           <view slot="footer">
             <button slot="footer" type="default" class="weui-btn"  open-type="getUserInfo" bindgetuserinfo="getUserInfo">确认授权</button>
-            <checkbox-group slot="tips" bindchange="bindAgreeChange" >
+           <!-- <checkbox-group slot="tips" bindchange="bindAgreeChange" >
                 <label class="weui-agree">
                     阅读并同意<navigator>《相关条款》</navigator>
                     <checkbox class="weui-agree__checkbox-check" />
                     <text class="weui-agree__checkbox"></text>
                     <view class="weui-agree__text"></view>
                 </label>
-            </checkbox-group>
+            </checkbox-group>-->
           </view>
         </mp-halfScreenDialog>  
     </view>
@@ -41,7 +41,7 @@
 </mp-cell>
 </view>
 <view wx:else>
-    <mp-cell hover link url="../login/login" value="{{username}}" footer="">
+    <mp-cell link url="../login/login" value="{{username}}" footer="">
                 <image slot="icon" src="{{userInfo.avatarUrl}}" style="margin-right: 16px;vertical-align: middle;width:120rpx; height: 120rpx;border-radius: 30rpx;border-radius: 30rpx;border: #78c9a7 solid 4rpx;"></image>
     </mp-cell>
 </view>
@@ -64,7 +64,7 @@
 
 </view>
 <view class="weui-panel__ft">
-                <view class="weui-cell weui-cell_access weui-cell_link">
+                <view class="weui-cell weui-cell_access weui-cell_link" bindtap="toSet">
                     <mp-icon type="outline" icon="setting" color="rgba(128, 128, 128, 0.733)" size="{{23}}"></mp-icon>
                     <view class="weui-cell__bd">设置</view>
                     <view class="weui-cell__ft weui-cell__ft_in-access"></view>

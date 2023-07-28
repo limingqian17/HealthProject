@@ -1,7 +1,116 @@
-/* pages/zone/zone.wxss */
-.bgd{
-    background-color: rgb(187, 219, 187);
-    height: 1250rpx;
+
+page {
+  background-color: #93f8ce23;
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 1.6;
+}
+.page-body{
+  width: 750rpx;
+}
+.page-section{
+  width: 100%;
+  margin-bottom: 60rpx;
+}
+.page-section_center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-section:last-child{
+  margin-bottom: 0;
+}
+.page-section-gap{
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+.page-section-spacing{
+  box-sizing: border-box;
+  padding: 0 0rpx;
+}
+.page-section-title{
+  font-size: 28rpx;
+  color: #999999;
+  margin-bottom: 10rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.page-section-gap .page-section-title{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.demo-text-1{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #c55d214f;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.demo-text-1::before{
+  content: '健康的个人饮食🤍五谷杂粮🌽🥔🍠蔬菜🥬🥕🍆🍅水果🍇🍊🍍🍈 鱼肉蛋奶🥩🍳🥛';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-text-2{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #2782D7;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.demo-text-2::before{
+  content: '光盘打卡🍽全世界饥饿人口超过10亿 我国每年至少浪费约2亿人的口粮';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-text-3{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #97f064b0;
+  color: #353535;
+  font-size: 36rpx;
+}
+.demo-text-3::before{
+  content: '无论是分类回收还是变废为宝 垃圾都有了更好的归宿✔';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button{
+  margin-bottom: 30rpx;
+}
+button:last-child{
+  margin-bottom: 0;
+}
+.page-section-title{
+  padding: 0;
+}
+.swiper-item{
+  display: block;
+  height: 150px;
+}
+.page-section-title{
+  margin-top: 60rpx;
+  position: relative;
+}
+.info{
+  position: absolute;
+  right: 0;
+  color: #353535;
+  font-size: 30rpx;
+}
+.page-foot{
+  margin-top: 50rpx;
 }
 .food{
     background-color: rgb(225, 241, 225);
@@ -18,43 +127,3 @@
     height: 400rpx;
     margin-bottom: 20rpx;
 }
-
-.div-relative{
-    position:relative;
-    color:#000;
-    border:1px solid #000;
-    width:500px;
-    height:400px
-  } 
-  /* 背景色为红色 */ 
-  .div-a{ 
-    position:absolute;
-    left:30px;
-    top:30px;
-    z-index:300;
-    background:#F00;
-    width:200px;
-    height:100px
-  } 
-  /* 背景为黄色 */
-  .div-b{ 
-    position:absolute;
-    left:50px;
-    top:60px;
-    z-index:200;
-    background:#FF0;
-    width:400px;
-    height:200px;
-  } 
-   /* 背景为蓝色 */ 
-  .div-c{ 
-    position:absolute;
-    left:80px;
-    top:80px;
-    z-index:210;
-    background:#00F;
-    width:300px;
-    height:300px
-  } 
-  
-  

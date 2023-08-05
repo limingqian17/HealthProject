@@ -1,0 +1,18 @@
+<!--pages/settings/settings.wxml-->
+<mp-cells class="some" ext-class="my-cells" title="外观设置">
+            <mp-cell value="关怀模式" footer="{{icon}}"></mp-cell>
+            <mp-cell value="深/浅模式" footer="{{}}"></mp-cell>
+</mp-cells>
+
+<mp-cells class="some" ext-class="my-cells" title="隐私设置">
+            <mp-cell value="树友权限" footer="{{icon}}"></mp-cell>
+            <mp-cell value="系统权限" footer="{{}}"></mp-cell>
+</mp-cells>
+
+<mp-cells class="some" ext-class="my-cells" title="基本设置">
+            <mp-cell value="清除缓存" footer="{{}}KB"></mp-cell>
+</mp-cells>
+
+<view class="else" wx:if="{{sessionid!=''}}">
+    <button style="background-color: #78fd95;color: #f1fdf9;" bindtap="dropOut">退出账号</button>
+</view>

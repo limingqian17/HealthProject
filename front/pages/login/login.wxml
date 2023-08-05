@@ -2,18 +2,18 @@
 <view class="weui-panel__ft" style="height: 1000rpx;">
                 <view hover-class="click" class="weui-cell weui-cell_access weui-cell_link" style="color: black;" bindtap="showActionSheet">
                     <view class="weui-cell__bd">头像</view>
-                    <image  src="{{imageSrc}}" mode="" style="width: 110rpx;height: 110rpx;border-radius: 30rpx;"/>
+                    <image  src="{{useravatar}}" mode="" style="width: 110rpx;height: 110rpx;border-radius: 30rpx;"/>
                     <view class="weui-cell__ft weui-cell__ft_in-access"></view>
                 </view>
                 <view hover-class="click" class="weui-cell weui-cell_access weui-cell_link" style="color: black;"  bindtap="openConfirm">
                     <view class="weui-cell__bd">昵称</view>
-                    <text style="width: 160rpx;font-size: 37rpx;">{{userInfo.name}}</text>
+                    <text style="font-size: 37rpx;">{{username}}</text>
                     <view class="weui-cell__ft weui-cell__ft_in-access"></view>
                 </view>
                 <view hover-class="click" class="weui-cell weui-cell_access weui-cell_link" style="color: black;">
                     <view class="weui-cell__bd">生日</view>
-                    <picker data-field="date" mode="date" value="{{date}}" start="1970-01-01" end="2022-12-31" bindchange="bindDateChange">
-            <view class="weui-input">{{date}}</view>
+                    <picker data-field="date" mode="date" value="{{userdate}}" start="1970-01-01" end="2022-12-31" bindchange="bindDateChange">
+                    <view class="weui-input">{{userdate}}</view>
         </picker>
                     <view class="weui-cell__ft weui-cell__ft_in-access"></view>
                 </view>
@@ -26,8 +26,22 @@
                 </view>
 </view>
 
-<button style="background-color: #93f8ce;color: rgba(0, 0, 0, 0.596);width: 300rpx;">保存</button>
 
-<mp-dialog title="修改昵称" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
-        <input bindinput="formInputChange" data-field="name" class="weui-input" placeholder="{{userInfo.name}}" style="font-size: 37rpx;"/>   
+
+<mp-dialog title="修改昵称" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}" mask-closable='{{false}}'>
+    <input type="text" placeholder="请输入昵称" value="{{username}}"  bindinput='handleInput'/>   
 </mp-dialog>
+
+
+<button bindtap="save" style="background-color: #72f08d;color: #f1fdf9;width: 300rpx;">保存</button>    
+<!--<button bindtap="postD">修改</button>bindinput="handleInput"
+<view class="imgs">
+    <image src='{{useravatar}}' bindtap="PreviewImg" mode='widthFix' />
+</view>-->
+<!--<view class="imgs" wx:for="{{tempFilePaths}}" wx:key="index">
+        <image src='{{item}}' bindlongpress="DeleteImg" bindtap="PreviewImg" data-index="{{index}}" mode='widthFix' />
+   
+</view>
+<button class="UploadBtnclass" bindtap="PreviewImg">上传图片</button>
+<image src="{{useravatar}}" mode=""/>-->
+

@@ -1,8 +1,11 @@
-<!--pages/charts/charts.wxml-->
+<!--pages/charts/charts.wxml
 <view class="title">
     低碳树排行云
 </view>
 
+<view class="page__bd">
+        <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+</view>-->
 <view class="bgd">
 
     <view class="item" wx:if="{{}}">
@@ -23,7 +26,7 @@
     <view class="item">
         <view class="before">
             <view class="order">{{index+1}}</view>
-            <view class="im2"><image src="static/t2.png" style="width: 105rpx;height: 105rpx;border-radius: 35rpx;" mode=""/></view>
+            <view class="im2"><image src="{{item.useravatar}}" style="width: 105rpx;height: 105rpx;border-radius: 35rpx;" mode=""/></view>
             <view class="name">{{item.username}}</view>
         </view>
         <view class="after">

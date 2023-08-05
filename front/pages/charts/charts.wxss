@@ -1,6 +1,5 @@
 /* pages/charts/charts.wxss */
 .bgd{
-
 }
 .title{
     width: 750rpx;
@@ -16,7 +15,7 @@
     flex-direction: row;
     justify-content: space-between;
     border-top:rgba(197, 240, 167, 0.158) solid 2rpx;
-    background-color: white;
+    background-color: #f6fffc;
     
 }
 .before{

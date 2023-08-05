@@ -8,7 +8,9 @@
         "pages/list/list",
         "pages/login/login",
         "pages/hdimg/hgimg",
-        "pages/rubbish_sorting/rubbish_sorting"
+        "pages/rubbish_sorting/rubbish_sorting",
+        "pages/settings/settings",
+        "pages/calorie/calorie"
     ],
     "window": {},
     "tabBar": {

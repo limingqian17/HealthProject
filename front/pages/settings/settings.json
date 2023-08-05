@@ -1,13 +1,13 @@
 {
     "usingComponents": {
         "mp-dialog": "weui-miniprogram/dialog/dialog",
+        "mp-icon": "weui-miniprogram/icon/icon",
         "mp-cells": "weui-miniprogram/cells/cells",
         "mp-cell": "weui-miniprogram/cell/cell",
-        "mp-icon": "weui-miniprogram/icon/icon",
         "mp-actionSheet": "weui-miniprogram/actionsheet/actionsheet"
     },
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#f1fdf9",
-    "navigationBarTitleText": "个人信息",
+    "navigationBarTitleText": "设置",
     "navigationBarTextStyle": "black"
 }

@@ -1,6 +1,6 @@
+<!--pages/zone/zone.wxml-->
 
-  <view class="page-body">
-    <view class="page-section page-section-spacing swiper">
+<view class="swiper">
       <swiper
         indicator-dots="true" autoplay="true" circular="" vertical=""
         interval="2000" duration="500" previous-margin="0px" next-margin="0px">
@@ -10,18 +10,48 @@
           </swiper-item>
         </block>
       </swiper>
+</view>
+<view class="page__bd">
+        <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+</view>
+
+<view class="bgg">
+    <view class="smm">
+        <view class="fdd">
+            <image src="https://images-1314484890.cos.ap-nanjing.myqcloud.com/HealthProject/2023080516315166198bc9b1e67b04a73844a766c5afa0eb0-Dy552H2f9kza4bb1539ead13c95a900244dcde4f0b8e.png" mode="" style="width: 405rpx;height: 540rpx;" />
+            <view class="fdt">
+                <view class="weui-cell weui-cell_access weui-cell_link dt" bindtap="toFood">
+                    <mp-icon type="field" icon="like" color="white" size="{{25}}"></mp-icon>
+                    <view class="weui-cell__bd">个人饮食</view>
+                    <mp-icon type="outline" icon="arrow" color="white" size="{{20}}"></mp-icon>
+                </view>
+            </view>
+        </view>
+        <view class="mrr">  
+            <mp-icon type="outline" icon="add2" color="#f1fdf9" size="{{80}}"></mp-icon>     
+        </view>
     </view>
-  </view>
-
-  <view class="food">
-    <button class="weui-btn mini-btn" type="primary" size="mini"  bindtap="toFood">个人饮食</button>
-            
+    <view class="sll">
+        <view class="pll">
+            <image src="https://images-1314484890.cos.ap-nanjing.myqcloud.com/HealthProject/202308051633039155b829c2ae7a7475b9484f2bfc98b91b2-TNjL4nk35cuya2d2902adffde262a61b8bf345011bbc.png" mode="" style="width: 334rpx;height: 405rpx;"/>
+            <view class="plt">
+                    <view class="weui-cell weui-cell_access weui-cell_link lt" bindtap="toList">
+                    <mp-icon type="field" icon="like" color="white" size="{{25}}"></mp-icon>
+                    <view class="weui-cell__bd">光盘打卡</view>
+                    <mp-icon type="outline" icon="arrow" color="white" size="{{20}}"></mp-icon>
+                </view>
+            </view>
+        </view>
+        <view class="ruu">
+            <image src="https://images-1314484890.cos.ap-nanjing.myqcloud.com/HealthProject/20230805163233319ab5591b9482646398a97c53c39c72333-qHAIAsQfgSZOdb72fd205b2ba5b62cd591f2cf26cc33.png" mode="" style="width: 334rpx;height: 415rpx;"/>
+            <view class="rut">
+                    <view class="weui-cell weui-cell_access weui-cell_link ut" bindtap="toRubbish">
+                    <mp-icon type="field" icon="like" color="white" size="{{25}}"></mp-icon>
+                    <view class="weui-cell__bd">垃圾小卫士</view>
+                    <mp-icon type="outline" icon="arrow" color="white" size="{{20}}"></mp-icon>
+                </view>
+            </view>
+        </view>
+    </view>
 </view>
-
-<view class="rubbish">
-    <button class="weui-btn mini-btn" type="primary" size="mini"  bindtap="toRubbish">垃圾分类</button>
-</view>
-
-<view class="plate">
-    <button class="weui-btn mini-btn" type="primary" size="mini"  bindtap="toList">光盘打卡</button>
-</view>
+<!---->

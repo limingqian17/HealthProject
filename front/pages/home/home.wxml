@@ -12,9 +12,9 @@
 </view>   
 <view class="log">
     
-<view wx:if="{{!isLogin}}">
+<view wx:if="{{sessionid==''}}">
 <mp-cell value="" footer="">
-                <image slot="icon" src="static/t1.png" style="margin-right: 16px;vertical-align: middle;width:120rpx; height: 120rpx;border-radius: 30rpx;border: #78c9a7 solid 4rpx;"></image>
+        <image slot="icon" src="static/t1.png" style="margin-right: 16px;vertical-align: middle;width:120rpx; height: 120rpx;border-radius: 30rpx;border: #72f08d  solid 4rpx;"></image>
 <view class="page" data-weui-theme="{{theme}}">
     <view class="page__bd">
         <view class="weui-btn-area" style="margin-top: 30rpx;">
@@ -42,7 +42,7 @@
 </view>
 <view wx:else>
     <mp-cell link url="../login/login" value="{{username}}" footer="">
-                <image slot="icon" src="{{userInfo.avatarUrl}}" style="margin-right: 16px;vertical-align: middle;width:120rpx; height: 120rpx;border-radius: 30rpx;border-radius: 30rpx;border: #78c9a7 solid 4rpx;"></image>
+                <image slot="icon" src="{{useravatar}}" style="margin-right: 16px;vertical-align: middle;width:120rpx; height: 120rpx;border-radius: 30rpx;border-radius: 30rpx;border: #f1fdf9 solid 4rpx;"></image>
     </mp-cell>
 </view>
 

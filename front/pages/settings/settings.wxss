@@ -1,0 +1,8 @@
+/* pages/settings/settings.wxss */
+.some{
+    
+}
+
+.else{
+    margin-top: 100rpx;
+}

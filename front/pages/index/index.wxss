@@ -1,17 +1,28 @@
 /**index.wxss**/
 /**index.wxss**/
 .bgd{
-    background-color: rgba(197, 240, 167, 0.158);
+    background-color: #e8fcf5;
     width: 750rpx;
-    height: 2200rpx;
     padding-top: 50rpx;
 }
+.hi{
+    font-size: 60rpx;
+    font-weight: bolder;
+}
 .big{
-    font-size: 45rpx;
+    font-size: 50rpx;
     font-weight: bolder;
 }
 .small{
-    font-size: 35rpx;
+    font-size: 40rpx;
+}
+.bi{
+    font-size: 45rpx;
+    font-weight: bolder;
+}
+.b{
+    font-size: 50rpx;
+    font-weight: bolder;
 }
 .head{
     margin-left: 20rpx;
@@ -25,9 +36,8 @@
     margin-left: 170rpx;
     width: 400rpx;
     height: 400rpx;
-    background-color: rgb(114, 221, 114);
+    background-color: #78fd95;
     border-radius: 200rpx;
-    border: white solid 5rpx;
 }
 .n{
     margin-top: 110rpx ;
@@ -38,7 +48,7 @@
     justify-content: space-between;
 }
 .nu{
-    margin: 30rpx;
+    margin: 100rpx 30rpx;
     width: 350rpx;
     display: flex;
     flex-direction: column;
@@ -59,14 +69,14 @@
 }
 .clock{
     margin-left: 40rpx;
-    background-color: rgba(64, 224, 104, 0.562);
+    background-color: #fdfd62;
     width: 290rpx;
     height: 290rpx;
     border-radius: 200rpx;
 }
 .cl{
     padding-left: 17rpx;
-    padding-top: 80rpx;
+    padding-top: 90rpx;
     width: 250rpx;
     height: 80rpx;
     display: flex;
@@ -75,14 +85,14 @@
 }
 .activity{
     margin-top: 100rpx;
-    background-color: rgba(64, 224, 171, 0.582);
+    background-color: #2afade;
     width: 350rpx;
     height: 350rpx;
     border-radius: 200rpx;
 }
 .ac{
     padding-left: 50rpx;
-    padding-top: 110rpx;
+    padding-top: 115rpx;
     width: 250rpx;
     height: 150rpx;
     display: flex;
@@ -90,11 +100,15 @@
     align-items: center;
 }
 .charts{
-    height: 800rpx;
-    
+    margin-top: 70rpx;
+    color: white;
+}
+.ch{
+    background-color: #aed1c6;
 }
 .chb{
     margin-left: 120rpx;
+    margin-bottom: 40rpx;
 }
 .chp{
     border-radius: 10rpx;
@@ -113,8 +127,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-top:rgba(197, 240, 167, 0.158) solid 2rpx;
-    background-color: white;
+    background-color: #aed1c6;
+    border-top:white solid 2rpx;
+    
     
 }
 .before{
@@ -143,7 +158,7 @@
     width: 120rpx;
     display: flex;
     justify-content: center;
-    color: rgb(148, 145, 145);
+    color: white;
 
     font-size: 45rpx;
 }
@@ -151,9 +166,10 @@
     width: 250rpx;
     margin-left: 2rpx;
     font-size: 34rpx;
+    color: white;
 }
 .treen{
-    color: rgb(148, 145, 145);
+    color: white;
     font-size: 45rpx;
 }
 .me{

@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="header">用餐卡路里计算器</view>
+  <view class="form">
+    <text>食物名称：</text>
+    <input bindinput="inputFoodName" placeholder="请输入食物名称"></input>
+    <text>卡路里：</text>
+    <input bindinput="inputCalories" type="number" placeholder="请输入卡路里"></input>
+    <button bindtap="calculateCalories">计算并保存</button>
+  </view>
+</view>

@@ -12,7 +12,7 @@
         "mp-form": "weui-miniprogram/form/form"
     },
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#93f8ce",
+    "navigationBarBackgroundColor": "#e8fcf5",
     "navigationBarTitleText": "我的",
     "navigationBarTextStyle": "black"
 }

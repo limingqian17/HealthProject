@@ -1,2 +1,10 @@
 // app.js
-App({})
+App({
+    globalData:{
+        sessionid:'',
+        username:'',
+        useravavatar:'',
+        userarea:'',
+        userdate:''
+    }
+})

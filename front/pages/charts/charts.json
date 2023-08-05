@@ -3,6 +3,11 @@
         "mp-dialog": "weui-miniprogram/dialog/dialog",
         "mp-icon": "weui-miniprogram/icon/icon",
         "mp-cells": "weui-miniprogram/cells/cells",
-        "mp-cell": "weui-miniprogram/cell/cell"
-    }
+        "mp-cell": "weui-miniprogram/cell/cell",
+        "mp-searchbar": "weui-miniprogram/searchbar/searchbar"
+    },
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e8fcf5",
+    "navigationBarTitleText": "低碳树排行云",
+    "navigationBarTextStyle": "black"
 }
